@@ -22,4 +22,4 @@
   대량의 애플리케이션 읽기 트래픽 처리 가능
 
 ### Read Scaling
-![Alt text](images/read_scaling.jpg "read scaling")
+![Alt text](./images/read_scaling.jpg "read scaling")

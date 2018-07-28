@@ -40,7 +40,7 @@ https://aws.amazon.com/ko/ec2/spot/
   - 다양한 내결함성 및 유연한 애플리케이션에 사용 가능
 
 ### Exams
-![Alt text](images/spot-instances.jpeg "spot instances")
+![Alt text](./images/spot-instances.jpeg "spot instances")
 
 
 ## placement group
@@ -63,4 +63,4 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html
     + Accelerated computing: F1, G2, G3, P2, P3
 
 ## High Availability and Fault tolerance architecture
-![Alt text](images/high-availability-architecture.jpeg)
+![Alt text](./images/high-availability-architecture.jpeg)

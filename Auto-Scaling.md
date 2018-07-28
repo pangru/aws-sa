@@ -10,7 +10,7 @@ https://docs.aws.amazon.com/ko_kr/autoscaling/ec2/userguide/LaunchConfiguration.
 ## Auto Scaling Life Cycle
 https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroupLifecycle.html
 
-![Alt text](images/auto_scaling_lifecycle.png "Auto Scaling Lifecycle")
+![Alt text](./images/auto_scaling_lifecycle.png "Auto Scaling Lifecycle")
 
 ### Scale out
 

@@ -8,4 +8,4 @@ https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-getting-sta
   3. Bills
   4. Payment History
 
-![Alt text](images/billing_dashboard.jpeg "billing dashboard")
+![Alt text](./images/billing_dashboard.jpeg "billing dashboard")

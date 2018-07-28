@@ -42,7 +42,7 @@ https://docs.aws.amazon.com/ko_kr/AmazonVPC/latest/UserGuide/VPC_Subnets.html
     
   - Add a rule on the instance's security group to allow traffic from the ELB's Security Group
   
-  ![Alt text](images/custom-route-table-diagram.png "route table diagram")
+  ![Alt text](./images/custom-route-table-diagram.png "route table diagram")
   
 ## Routing
 

@@ -10,4 +10,4 @@
 4. storing session data
 
 ### Read Scaling
-![Alt text](images/read_scaling.jpg "read scaling")
+![Alt text](./images/read_scaling.jpg "read scaling")
