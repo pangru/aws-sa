@@ -1,7 +1,6 @@
 # EC2
 
 ## 인스턴스 유형
-
 ### I2 
 
 https://aws.amazon.com/blogs/aws/amazon-ec2-new-i2-instance-type-available-now/
@@ -32,6 +31,16 @@ The total number of running On-Demand instances that you can have in this region
 Some instance types have different limits for this region that count against your total limit
 these are listed below. Check the Current Limit column to find out how many instances per instance type you can run.
 
+### Attach EC2 to existing AutoScaling Group
+https://docs.aws.amazon.com/autoscaling/ec2/userguide/attach-instance-asg.html
+
+  premise
+
+  1. The instance is in the <b><i>running</i></b> state
+  2. The AMI used to launch the instance must still exist
+  3. The instance is not a member of another Auto Scaling group
+  4. The instance is in the same Availability Zone as the Auto Scaling group
+  5. If the Auto Scaling group has an attache dload balancer, the instance and the load balancer must both be in EC2-Classic or the same VPC. If the Auto Scaling grop has an attached target group, the instance and the Application Load Balancer must both in the same VPC
 
 ## Spot instances
 https://aws.amazon.com/ko/ec2/spot/

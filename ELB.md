@@ -2,6 +2,8 @@
 
 https://aws.amazon.com/ko/elasticloadbalancing/
 
+<b>To evenly distribute traffic among multiple EC2 instances in seperate Availability Zones</b>
+
 ## Classic Load Balancer
 - load balance HTPP/HTTPS applications
 - strict layer 4 Load Balancing for applications that rely purely on the TCP protocoal,

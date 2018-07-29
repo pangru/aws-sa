@@ -5,7 +5,6 @@
   - Oracle
   - MariaDB
 
-
 ## Read Replicas
   https://aws.amazon.com/rds/details/read-replicas/
 

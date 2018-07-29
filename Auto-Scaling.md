@@ -1,9 +1,15 @@
 # Auto-Scaling
+![Alt text](./images/auto-scaling-architecture.png "Auto Scaling Group")
+
+## Auto Scaling Components
+  1. Goups
+  2. Launch configuration as a template
+  3. Scaling plans
 
 ## AMI ID
   - Amazon Machine Image (AMI)
   - Launch Configuration is a template that an Auto Scaling group uses to launch EC2 instances
-  - when create a launch configuration, you specify information for the instances such as the AMI ID
+  - when create a launach configuration, you specify information for the instances such as the AMI ID
 
 https://docs.aws.amazon.com/ko_kr/autoscaling/ec2/userguide/LaunchConfiguration.html
 

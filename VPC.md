@@ -13,7 +13,25 @@ https://aws.amazon.com/ko/vpc/faqs/?nc1=h_ls
   8. VPC Endpoints
   9. Egress-only Internet Gateway
 
-## Security Groups or Network ACL's
+## NAT Instances
+Must be provisioned into a public subnet, and it must part of the private subnet's route table
+
+## Establish the VPN connection
+Must create a customer gateway resource in AWS <br/>
+
+### the information to create a customer gateway resources
+https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_VPN.html
+
+![Alt text](./images/customer-gateway.jpeg "customer gateway information")
+
+## Security
+https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Security.html
+
+  - Security groups : as a firewall for associated Amazon EC2 instances, controlling both inbound and outbound
+  - Network Access Control Lists (ACLs) : as a firewall for associated subnets
+  - Flow logs : capture information about the IP traffic going
+
+### Security Groups or Network ACL's
   filter only on destination ports <br/>
   when add or remove rules, <b> automatically applied (immediately) </b>to all instances associated with it.
 
@@ -25,7 +43,6 @@ https://aws.amazon.com/ko/vpc/faqs/?nc1=h_ls
   - a logically isolated virtual network
   - automatically created for your AWS Account the first time you provision Aamazon EC2 resources
 
-
 ## Hosting a set of web and database servers
 1. The web servers in a public subnet.
    The users can then access the application or web url via the Internet gateway to the web server.
@@ -33,7 +50,6 @@ https://aws.amazon.com/ko/vpc/faqs/?nc1=h_ls
 
 ![Alt text](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/images/nat-gateway-diagram.png "nat gateway diagram")
 https://docs.aws.amazon.com/ko_kr/AmazonVPC/latest/UserGuide/VPC_Subnets.html
-
 
 ## In order for the EC2 or ELBs to be accessible from internet
   - configure the route table for public subnet to route traffic to VPC internet gateway
@@ -44,8 +60,14 @@ https://docs.aws.amazon.com/ko_kr/AmazonVPC/latest/UserGuide/VPC_Subnets.html
   
   ![Alt text](./images/custom-route-table-diagram.png "route table diagram")
   
-## Routing
 
+## Flow Logs
+enable to capture information about the IP traffic going to and from network interfaces
+
+https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/flow-logs.html
+
+
+## Routing
 ### Interget Gateway
 ### NAT device
   - for instances in private subnet

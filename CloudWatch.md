@@ -1,5 +1,12 @@
 # CloudWatch
 
+<b>Cloudwatch graphs : </b> CPU utilization of your resources and you can see the trend over time in the graphs
+
+## Examples
+### how to find underutilized resources
+![Alt text](./images/cloudwatch-exam.jpeg "")
+
+
 ## The Types of Alarm states
 
 1. Alarm
