@@ -6,6 +6,14 @@
 ### how to find underutilized resources
 ![Alt text](./images/cloudwatch-exam.jpeg "")
 
+## Features
+https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html
+
+  - Monitor Logs from Amazon EC2 Instances in Real-time
+  - Monitor AWS CloudTrail Logged Events
+  - Log Retention
+  - Archive Log Data
+  - Log Route 53 DNS Queries
 
 ## The Types of Alarm states
 
@@ -14,6 +22,7 @@
 2. Insufficient
   - INSUFFICIENT_DATA
   - The Alarm has just started, the metric is not availble, or not enough data is available for the metric to determine the Alarm state.
+  - The checks may still be in progress on the volume
 3. OK
   - The metric is within the defined threshold
 

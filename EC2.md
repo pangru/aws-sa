@@ -1,8 +1,37 @@
 # EC2
 
+## Instance Metadata 
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html
+
+Configure or manage the running instance
+
+  - To view metdata's categories from within a running instance
+  > http://169.254.169.254/latest/meta-data
+  - as cURL
+  > curl http://169.254.169.254/latest/meta-data<br>
+  > GET http://169.254.169.254/latest/meta-data
+
+  - To view detail category within meta-data
+  > curl http://169.254.169.254/ltest/meta-data/<category-name>/
+  
+
+## EC2 CLI command
+
+#### get help in why the instance was shutdown
+https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html
+
+``` > aws ec2 describe-instances --instance-id i<nstance_id> ```
+``` 
+ // Response
+ "StateReason": {
+   "Message": "Client.UserInitiatedShutdown: User initiated shutdown",
+   "Code": "Client.UserInitiatedShutdown"
+ }
+```
+
+
 ## 인스턴스 유형
 ### I2 
-
 https://aws.amazon.com/blogs/aws/amazon-ec2-new-i2-instance-type-available-now/
 
   - optimized to deliver tens of thousands of low-latency
@@ -31,22 +60,11 @@ The total number of running On-Demand instances that you can have in this region
 Some instance types have different limits for this region that count against your total limit
 these are listed below. Check the Current Limit column to find out how many instances per instance type you can run.
 
-### Attach EC2 to existing AutoScaling Group
-https://docs.aws.amazon.com/autoscaling/ec2/userguide/attach-instance-asg.html
-
-  premise
-
-  1. The instance is in the <b><i>running</i></b> state
-  2. The AMI used to launch the instance must still exist
-  3. The instance is not a member of another Auto Scaling group
-  4. The instance is in the same Availability Zone as the Auto Scaling group
-  5. If the Auto Scaling group has an attache dload balancer, the instance and the load balancer must both be in EC2-Classic or the same VPC. If the Auto Scaling grop has an attached target group, the instance and the Application Load Balancer must both in the same VPC
-
 ## Spot instances
 https://aws.amazon.com/ko/ec2/spot/
-
   - 비용을 최적화하고 동일한 예산으로 애플리케이션 처리량을 최대 10배까지 늘릴 수 있다
   - 다양한 내결함성 및 유연한 애플리케이션에 사용 가능
+  - well-suited for data analysis, batch jobs, background processing, optional tasks
 
 ### Exams
 ![Alt text](./images/spot-instances.jpeg "spot instances")

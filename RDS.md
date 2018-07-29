@@ -1,9 +1,20 @@
 # RDS
 
-## Multi-AZ deployments for DB engines utilize synchronous physical replication to keep data on the standby up-to-date with the primary
+## Best Practices for working with MySQL
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_BestPractices.html#CHAP_BestPractices.MySQLStorage
+
+  - Automated backups are enabled for the RDS
+  - Tables in the database do not get too large
+  - File sizes for the RDS is well under 16 TB
+  - Use the InnoDB Storage engine for MySQL
+
+
+## Amazon RDS Multi-AZ Deployment (RDS 다중 AZ 배포)
+### Multi-AZ deployments for DB engines utilize synchronous physical replication to keep data on the standby up-to-date with the primary
   - MySQL
   - Oracle
   - MariaDB
+  ![Alt text](./images/rds-multi-az.jpeg "read scaling")
 
 ## Read Replicas
   https://aws.amazon.com/rds/details/read-replicas/

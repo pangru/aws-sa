@@ -4,6 +4,8 @@ https://aws.amazon.com/ko/elasticloadbalancing/
 
 <b>To evenly distribute traffic among multiple EC2 instances in seperate Availability Zones</b>
 
+  - the most the ideal solution for adding elasticity to an application
+
 ## Classic Load Balancer
 - load balance HTPP/HTTPS applications
 - strict layer 4 Load Balancing for applications that rely purely on the TCP protocoal,
@@ -22,3 +24,11 @@ https://aws.amazon.com/ko/elasticloadbalancing/
 - 연결 수준(레이어 4)에서 작동하는 Network Load Balancer는 Amazon Virtual Private Cloud(Amazon VPC) 내의 대상으로 트래픽을 라우팅
 - 초당 수백만 개의 요청을 처리하면서 극히 낮은 지연 시간 유지 가능 
 - 갑작스러운 일시적 트래픽 패턴 처리에도 최적화
+
+## Trouble-Shooting
+https://aws.amazon.com/ko/premiumsupport/knowledge-center/elb-connectivity-troubleshooting/
+
+#### 인터넷 연결이 안됩니다!
+----
+  1. VPC has an interget gateway attached
+  2. Route table properly configured for the subnet

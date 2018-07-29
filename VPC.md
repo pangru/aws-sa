@@ -13,6 +13,15 @@ https://aws.amazon.com/ko/vpc/faqs/?nc1=h_ls
   8. VPC Endpoints
   9. Egress-only Internet Gateway
 
+## Exams
+#### #1. DNS hostname options of the VPC
+![](./images/vpn-dns-hostname.jpeg)
+
+
+
+#### #2. When you create a VPC using VPC wizard, an IGW is automatically created and associated with the VPC
+  - https://docs.aws.amazon.com/ko_kr/AmazonVPC/latest/UserGuide/VPC_Internet_Gateway.html
+
 ## NAT Instances
 Must be provisioned into a public subnet, and it must part of the private subnet's route table
 
@@ -24,19 +33,7 @@ https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_VPN.html
 
 ![Alt text](./images/customer-gateway.jpeg "customer gateway information")
 
-## Security
-https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Security.html
-
-  - Security groups : as a firewall for associated Amazon EC2 instances, controlling both inbound and outbound
-  - Network Access Control Lists (ACLs) : as a firewall for associated subnets
-  - Flow logs : capture information about the IP traffic going
-
-### Security Groups or Network ACL's
-  filter only on destination ports <br/>
-  when add or remove rules, <b> automatically applied (immediately) </b>to all instances associated with it.
-
-  - single IPv4 address --> using the /32 prefix length
-  - single IPv6 address --> using the /128 prefix length
+## [Security](Security.md)
 
 ## 유형
 ### Default VPCs
@@ -65,19 +62,3 @@ https://docs.aws.amazon.com/ko_kr/AmazonVPC/latest/UserGuide/VPC_Subnets.html
 enable to capture information about the IP traffic going to and from network interfaces
 
 https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/flow-logs.html
-
-
-## Routing
-### Interget Gateway
-### NAT device
-  - for instances in private subnet
-  
-### Virtual Private Gateway
-### VPC Peering Connection
-  - 두 VPC 간에 트래픽을 라우틱할 수 있게 해주는 두 VPC 사이의 네트워킹 연결
-
-### ClassicLink
-  - EC2-Classic 인스턴스를 VPC에 연결
-
-### Egress-Only Internet Gateway
-  - VPC endpoint 와 다른 AWS Service 사이에 프라이빗 연결 생성

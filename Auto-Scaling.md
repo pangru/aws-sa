@@ -18,8 +18,18 @@ https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroupLifecycle.
 
 ![Alt text](./images/auto_scaling_lifecycle.png "Auto Scaling Lifecycle")
 
-### Scale out
+### Attach EC2 to existing AutoScaling Group
+https://docs.aws.amazon.com/autoscaling/ec2/userguide/attach-instance-asg.html
 
+  premise
+
+  1. The instance is in the <b><i>running</i></b> state
+  2. The AMI used to launch the instance must still exist
+  3. The instance is not a member of another Auto Scaling group
+  4. The instance is in the same Availability Zone as the Auto Scaling group
+  5. If the Auto Scaling group has an attache dload balancer, the instance and the load balancer must both be in EC2-Classic or the same VPC. If the Auto Scaling grop has an attached target group, the instance and the Application Load Balancer must both in the same VPC
+
+### Scale out
   1. Manual Scaling
     * manually increase the size of the group
   2. Dynamic Scaling
