@@ -46,3 +46,9 @@ https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/monitoring-system-inst
   - stop and start the instance based off of status check alarms.
   - Amazon EC2 인스턴스 모니터링
   - 기본 문제로 인해 인스턴스가 손상된 경우 인스턴스를 자동으로 복구하는 Amazon CloudWatch 경보 생성 가능
+
+### categories
+  1. CPU Usage
+  2. Disk read operations
+  3. Network in
+  4. Memory Usage (optional)

@@ -16,7 +16,6 @@ Configure or manage the running instance
   
 
 ## EC2 CLI command
-
 #### get help in why the instance was shutdown
 https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html
 
@@ -66,7 +65,13 @@ https://aws.amazon.com/ko/ec2/spot/
   - 다양한 내결함성 및 유연한 애플리케이션에 사용 가능
   - well-suited for data analysis, batch jobs, background processing, optional tasks
 
-### Exams
+## Reserved instances
+#### Selling on the Reserved Instance Marketplace
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ri-market-general.html
+
+Supports the scale of third-party and AWS customer's unused Standard Reserved Instances.
+
+## Exams
 ![Alt text](./images/spot-instances.jpeg "spot instances")
 
 
