@@ -1,5 +1,8 @@
 # EC2
 
+## Instance Life-cycle
+![](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/instance_lifecycle.png)
+
 ## Instance Metadata 
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html
 
