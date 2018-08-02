@@ -20,5 +20,8 @@ AWS Server-Side Encryption
   - The messages are stored in encrypted form
   - SQS decrypts messages only when they are sent to an authorized customer
 
+## Loose coupling
+![](sqs-and-loose-coupling.jpg "")
 
-
+## PipeLine SQS Architecture
+![](pipeline-sqs-architecture.png "")
