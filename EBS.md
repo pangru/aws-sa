@@ -30,7 +30,7 @@ https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/EBSSnapshots.html
 
 ### How to backup the EBS Volumes
 ___
-** Write a cronjob that uses the AWS CLI to take a snapshot of production EBS Volumes **
+**Write a cronjob that uses the AWS CLI to take a snapshot of production EBS Volumes**
 
 ## Apply Encryption While Copying a Snapshot
 1. Create a snapshot of your unencrypted EBS volume. This snapshot is also unencrypred
