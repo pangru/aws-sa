@@ -1,5 +1,6 @@
 # DynamoDB
 
+## R/W access to items ranging from 1 byte up to 400 KB
 ## Throughput capacity for read and write
 
 https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ProvisionedThroughput.html
@@ -16,3 +17,8 @@ https://aws.amazon.com/ko/dynamodb/faqs/
   - Easier traffic management
   - Easy regional migration
   - Living data migration
+
+## Use cases
+  - Managing web sessions
+  - Storing JSON documents
+  - Stroing metadata for Amazon S3 objects (for BLOB data)
