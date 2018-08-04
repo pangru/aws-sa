@@ -12,6 +12,10 @@ https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.ht
   - Monitor Logs from Amazon EC2 Instances in Real-time
   - Monitor AWS CloudTrail Logged Events
   - Log Retention
+    + Log retention schedules
+      * 1 minutes datapoints are available for 15 days
+      * 5 minutes datapoints are available for 63 days
+      * 1 hour data points are available for 455 days
   - Archive Log Data
   - Log Route 53 DNS Queries
 
