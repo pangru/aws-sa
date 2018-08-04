@@ -1,9 +1,20 @@
 # EBS
 
+Durable, Block-level storage device that can attach to a single EC2 instance
+
+## Benefits
+  - Data availability (store in a single Availability Zone)
+  - Data persistence
+  - Data encryption
+  - Flexibility
+  - Snapshots
+    > ability to create snapshots (backups) of any EBS volume and write a copy of the data in the volume to Amazon S3, where it is stored redundantly in multiple Availability Zones. The volume does not need to be attached to a running instance in order to take a snapshot
+
+
 ## For High performance
 always look to using IPOS as the preferred storage option.
-  - Provisioned IOPS (max 32,000 **)
-  
+  - Provisioned IOPS (max 32,000)  
+
 ### Provisioned IOPS (I/O operation Per Seconds)
   - Maximum ratio is 50:1 (if volume size 8 GiB --> IOPS 400)
 

@@ -16,3 +16,27 @@
     - 템플릿의 Resources 및 Outputs 섹션에서 리소스를 참조할 수 있습니다.
   9. Outputs
 
+### Simple CloudFormation template
+
+```
+  { 
+    "Resources": {
+      "MyEC2Instance": {
+        "Type": "AWS::EC2::Instance",
+        "Properties": {
+          "ImageId": "ami-d6f32ab5"
+        }
+      }
+    },
+    "Outputs": {
+      "Availability": {
+        "Description": "The Instance ID",
+        "Value": {
+          {"Fn::GetAtt": ["MyEC2Instance", "AvailabilityZone"]}
+        }
+      }
+    }
+  },
+
+```
+

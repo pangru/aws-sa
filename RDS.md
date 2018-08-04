@@ -10,6 +10,11 @@ https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_BestPractices.html#C
 
 
 ## Amazon RDS Multi-AZ Deployment (RDS 다중 AZ 배포)
+## Benefits to add Multi-AZ deployment
+  - MultiAZ deployed database can tolerate an Availability Zone failure
+  - Make Database more available during maintenance tasks
+  - If a storage volume on the primary fails in a Multi-AZ deployment, RDS automatically initiates a failover to the up-to-date standby
+
 ### Multi-AZ deployments for DB engines utilize synchronous physical replication to keep data on the standby up-to-date with the primary
   - MySQL
   - Oracle

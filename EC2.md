@@ -1,6 +1,10 @@
 # EC2
 
 ## Instance Life-cycle
+  - rebooting
+  - pending
+  - running
+  - shutting-down
 ![](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/instance_lifecycle.png)
 
 ## Instance Metadata 
