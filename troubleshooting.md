@@ -1,6 +1,9 @@
 # Troubleshooting
 https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Troubleshooting.html
 
+## Best Practice
+https://d0.awsstatic.com/whitepapers/aws-web-hosting-best-practices.pdf
+
 ## Cannot connect to Amazon RDS DB Instance
     1. The local firewall is stopping the communication traffic
     2. The port cannot be used to send or receive communication for inbound and outbound
