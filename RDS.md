@@ -1,5 +1,10 @@
 # RDS
 
+## Parameter Groups
+> Be used to assign specific settings which can be applied to a set of RDS instances
+DB
+
+
 ## Best Practices for working with MySQL
 https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_BestPractices.html#CHAP_BestPractices.MySQLStorage
 
