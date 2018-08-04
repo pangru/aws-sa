@@ -37,6 +37,50 @@ https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html
 
 
 ## 인스턴스 유형
+https://aws.amazon.com/ec2/instance-types/
+
+### T2
+Burstable Performance Instances
+  - Use Cases
+    + Websites and web applications,
+    + development environment,
+    + build servers
+    + code repositories
+    + micro services
+    + test and staging environments
+    + line of business applications
+
+### M5
+The latest generation of General Purpose Instances
+  - Use Cases
+    + Small and mid-size databases
+    + data processing tasks that require additional memory
+    + caching fleets
+    + for running backend servers for SAP
+    + Microsoft SharePoint
+    + cluster computing
+    + other enterprise applications
+
+### M4
+Provide a balance of compute, memory, and network resources for many applications
+  - Use Cases
+    + Small and mid-size databases
+    + data processing tasks that require additional memory
+    + caching fleets
+    + for running backend servers for SAP
+    + Microsoft SharePoint
+    + cluster computing
+    + other enterprise applications
+
+### Compute Optimized
+  - C5, C4
+### Memory Optimized
+  - X1e, R5, R4, Z1d, 
+### Accelerated Computing (Machine learning, ... )
+  - P3, P2, G3, F1, 
+### Storage Optimized
+  - H1, I3, D2, 
+
 ### I2 
 https://aws.amazon.com/blogs/aws/amazon-ec2-new-i2-instance-type-available-now/
 
