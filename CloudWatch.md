@@ -19,6 +19,12 @@ https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.ht
   - Archive Log Data
   - Log Route 53 DNS Queries
 
+## Basic Monitoring for EC2 at No Charge
+  - CPU load
+  - Disk I/O
+  - Network I/O
+  - Collected at 5 minutes intervals and stored for 2 weeks
+
 ## The Types of Alarm states
 
 1. Alarm
