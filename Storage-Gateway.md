@@ -1,6 +1,8 @@
 # Storage Gateway
 service helps customers seamlessly integrate existing on-premises applications, infrastructure and data with the AWS Cloud
 
+https://aws.amazon.com/ko/storagegateway/faqs/
+
 ## Use Cases
 Customers use hybrid cloud storage
 
