@@ -25,3 +25,16 @@ https://d0.awsstatic.com/whitepapers/aws-web-hosting-best-practices.pdf
   2. Route table properly configured for the subnet
   3. A public IP or elastic IP address attached to the instance
   4. A route entry to the Internet gateway in the Route table
+
+
+## IAM
+### Best Practice
+https://docs.aws.amazon.com/ko_kr/IAM/latest/UserGuide/best-practices.html
+  - root 사용자 액세스키 잠그기
+  - 개별 사용자 만들기
+  - 그룹을 사용하여 IAM 사용자에게 권한 할당
+  - 가급적 AWS 정의 정책을 이용해 권한 할당
+  - 최소 권한 부여
+  - 액세스 레벨을 이용한 권한 검토
+  - 역할을 사용하여 위임
+  
